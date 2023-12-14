@@ -21,14 +21,13 @@ void FiniteDifference(int N, double h) {
         std::cout << "u(" << x[i] << ") = " << u[i] << std::endl;
     }
 
-    // Освобождение памяти
     delete[] u;
     delete[] x;
 }
 
 int main() {
     int N = 1000;
-    double h = 0.001; 
+    double h = 1.0/1000.0; 
 
     FiniteDifference(N, h);
 
